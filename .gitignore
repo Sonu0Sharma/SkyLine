@@ -1,0 +1,54 @@
+# --- General / OS Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Security (CRITICAL) ---
+# Ignores all environment files containing API keys
+.env
+.env.*
+!.env.example
+
+# Fix: Explicitly ignore the backend .env deep in the folder structure
+skyline-project/backend/.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# --- venv ---
+venv/
+skyline-project/venv
+backend/venv/
+skyline-project/backend/venv/
+AI-Job_Assist/skyline-project/venv
+
+# --- Python Backend ---
+backend/venv/
+backend/env/
+backend/__pycache__
+backend/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+backend/.pytest_cache/
+backend/coverage/
+backend/htmlcov/
+
+# --- Node/React Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/yarn.lock
+frontend/package-lock.json
+
+# --- Database ---
+*.sqlite3
+*.db
+backend/skyline.db
+
+# --- Testing / Pytest ---
+.coverage
